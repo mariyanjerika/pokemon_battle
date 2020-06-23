@@ -1,0 +1,62 @@
+<html>
+   <head>
+      <meta charset='utf-8' />
+      <meta name='description' content='a browser game to practice objects in javascript' />
+      <meta name=viewport content='width=device-width, initial-scale=1' />
+      <title></title>
+      <link rel='stylesheet' href='style.css' />
+      <script src='js/gamemanager.js'></script>
+      <script src='js/player.js'></script>
+      <script src='js/foe.js'></script>
+   </head>
+   <body> 
+
+      <!-- tasks -->
+      <div class='header'>
+      <p>check out my simple game! guided by youtuber mmtuts</p>
+      <h2>Choose your character!</h2>
+      </div>
+
+      <!-- our player-->
+      <div class='interface'>
+         <a href='#' onclick="GameManager.setGameStart('Pikachu')">
+            <img src='images/pikachu.jpg' alt='pikachu'/>
+            <div>
+               <h3>Pikachu</h3>
+               <p>type: lightning</p>
+            </div>
+         </a>
+         <a href='#' onclick="GameManager.setGameStart('Bulbasaur')">
+            <img src='images/bulbasaur.jpg' alt='bulbasaur'/>
+            <div>
+               <h3>Bulbasaur</h3>
+               <p>type: grass</p>
+            </div>
+         </a>
+         <a href='#' onclick="GameManager.setGameStart('Charmander')">
+            <img src='images/charmander.jpg' alt='charmander'/>
+            <div>
+               <h3>Charmander</h3>
+               <p>type: fire</p>
+            </div>
+         </a>
+         <a href='#' onclick="GameManager.setGameStart('Squirtle')">
+            <img src='images/squirtle.jpg' alt='squirtle'/>
+            <div>
+               <h3>Squirtle</h3>
+               <p>type: water</p>
+            </div>
+         </a>
+      </div>
+
+      <!-- actions/buttons -->
+      <div class='actions'></div>
+
+      <!-- arena -->
+      <div class='arena'></div>
+
+      <!-- foe -->
+      <div class='enemy'></div>
+
+   </body>
+</html>

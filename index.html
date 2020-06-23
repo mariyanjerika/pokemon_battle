@@ -1,0 +1,77 @@
+<!doctype>
+<html>
+   <head>
+      <title>Pokemon Battle!</title>
+      <meta charset = 'utf-8' />
+      <meta name='description' content='a pokemon-ish browser game to practice objects in javascript' />
+      <meta name=viewport content='width=device-width, initial-scale=1' />
+      <link rel='stylesheet' href='style.css' />
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+      <script src='game_manager.js'></script>
+      <script src='player.js'></script>
+      <script src='foe.js'></script>
+   </head>
+   <body>
+      <header>
+         <h1>Pokemon Battle!</h1>
+         <p>This is a simple Pokemon game that was created to practice objects in JavaScript. Big thanks to youtuber mmtuts for showing how!</p>
+         <h2>Choose your Pokemon!</h2>
+      </header>
+      <div class = 'interface'>
+
+         <div class='player_pokemon'>
+         <a href='#' onclick="GameManager.setGameStart('Pikachu')">
+            <img src='images/pikachu.jpg' />
+            <div class='stats'>
+               <h3>Pikachu</h3>
+               <p>Type: electric </p>
+               <p>Strong against: water </p>
+               <p>Weak against: grass, electric</p>
+            </div>
+         </a>
+         </div>
+
+         <div class='player_pokemon'>
+         <a href='#' onclick="GameManager.setGameStart('Bulbasaur')">
+            <img src='images/bulbasaur.jpg' />
+            <div class='stats'>
+               <h3>Bulbasaur</h3>
+               <p>Type: grass </p>
+               <p>Strong against: water </p>
+               <p>Weak against: fire, grass</p>
+            </div>
+         </a>
+         </div>
+
+         <div class='player_pokemon'>
+         <a href='#' onclick="GameManager.setGameStart('Charmander')">
+            <img src='images/Charmander.jpg' />
+            <div class='stats'>
+               <h3>Charmander</h3>
+               <p>Type: fire </p>
+               <p>Strong against: grass </p>
+               <p>Weak against: water, fire</p>
+            </div>
+         </a>
+         </div>
+
+         <div class='player_pokemon'>
+         <a href='#' onclick="GameManager.setGameStart('Squirtle')">
+            <img src='images/Squirtle.jpg' />
+            <div class='stats'>
+               <h3>Squirtle</h3>
+               <p>Type: water </p>
+               <p>Strong against: fire </p>
+               <p>Weak against: grass, electric, water</p>
+            </div>
+         </a>
+         </div>
+
+      </div>
+
+      <div class = 'actions' id='pre_actions'></div>
+      <div class = 'arena'></div> 
+      <div class = 'enemy'></div>
+
+   </body>
+</html>
