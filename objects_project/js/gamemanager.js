@@ -26,7 +26,7 @@ let GameManager = {
       getInterface.innerHTML = '<img src="images/' + classType.toLowerCase() + '.jpg" class="image-avatar"><div><h3>' + classType + '</h3><p class="health-player">Health: ' + player.health + '</p><p>Mana: ' + player.mana + '</p><p>Strength: ' + player.strength + '</p><p>Agility: ' + player.agility + '</p><p>Speed: ' + player.speed + '</p><div>';
    },
 
-   //in prefight method, we will grab different elements from the index page to change them to match with the game. we change the task, the character, the button area with actions, arena, and enemy area
+   //in prefight method, we will grab different elements from the index page to change them to match within the game. we change the task, the character, the button area with actions, arena, and enemy area
    setPreFight: function() {
       let getHeader = document.querySelector(".header");
       let getActions = document.querySelector(".actions");

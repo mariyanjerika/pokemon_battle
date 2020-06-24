@@ -24,7 +24,7 @@ let GameManager = {
       + pokemonName.toLowerCase() 
       + '.jpg" class="image-avatar"><div><h3>' 
       + pokemonName 
-      + '</h3><p class="health-pokemon">HP: ' 
+      + '</h3><p class="health-player">HP: ' 
       + player.health_points 
       + '<p>Speed: ' 
       + player.speed 
@@ -73,16 +73,16 @@ let GameManager = {
             break;
       }
    getHeader.innerHTML = '<p>Task: Choose your move!<p>';
-   getActions.innerHTML = '<a href="#" class="button-prefight" id="choose_move_actions" onclick="PlayerMoves.calcAttack()"><p class="battle_moves id="battle_move_one">' 
+   getActions.innerHTML = '<a href="#"><p class="battle_move_one" onclick="playerMoveOne.calcAttack()">' 
    + player.moveOne 
-   + '<p class="battle_moves id="battle_move_two">'
+   + '<p class="battle_move_two" onclick="playerMoveTwo.calcAttackTwo()">'
    + player.moveTwo
    + '</p></a>';
    getEnemy.innerHTML ='<img src="images/' 
    + foe.enemyName.toLowerCase() 
    + '.jpg" class="image-avatar"><div><h3>' 
    + foe.enemyName 
-   + '</h3><p class="health-pokemon">HP: ' 
+   + '</h3><p class="health-foe">HP: ' 
    + foe.health_points 
    + '<p>Speed: ' 
    + foe.speed 
@@ -93,8 +93,10 @@ let GameManager = {
    + ', '
    + foe.moveTwo 
    + '</p></div>';
-
-
    }
 }
+
+
+
+
 
